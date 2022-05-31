@@ -1,11 +1,11 @@
 export enum Tipo{
-    INGRESO,
-    EGRESO
+    INGRESO = "INGRESO",
+    EGRESO = "EGRESO"
 }
 
 export default interface Movimiento{
     id: null;
-    fecha: number;
+    fecha: Date;
     descripcion: string;
     cantidad: number;
     tipo: Tipo
